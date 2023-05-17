@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   darkMode: 'class',
   content: [
@@ -7,11 +9,26 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+    colors: {
+      primary: {
+        light: colors.zinc[300],
+        dark: colors.zinc[700]
+      },
+      secondary: {
+        light: colors.slate[300],
+        dark: colors.slate[700]
+      },
+      accent: {
+        light: colors.indigo[300],
+        dark: colors.indigo[700]
+      },
+      background: {
+        light: colors.gray[100],
+        dark: colors.gray[900]
+      },
+      text: {
+        light: colors.zinc[700],
+        dark: colors.zinc[300]
       }
     }
   },

@@ -19,7 +19,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <body
           className={clsx(
             montserrat.className,
-            'h-screen bg-slate-200 dark:bg-gray-900'
+            'h-screen bg-background-light dark:bg-background-dark'
           )}
         >
           <ClientThemeProvider>{children}</ClientThemeProvider>

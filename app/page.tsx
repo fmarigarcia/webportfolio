@@ -6,7 +6,7 @@ const Home: React.FC = () => {
     <main>
       <ConfigBar />
       <div className="fixed left-0 top-0 h-full w-full  px-8 py-8">
-        <div className="h-full border border-slate-500">a</div>
+        <div className="border-slate-500 h-full border">a</div>
       </div>
     </main>
   );
