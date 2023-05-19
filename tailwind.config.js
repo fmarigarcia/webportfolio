@@ -27,8 +27,8 @@ module.exports = {
         dark: colors.gray[900]
       },
       text: {
-        light: colors.zinc[700],
-        dark: colors.zinc[300]
+        light: colors.zinc[800],
+        dark: colors.zinc[200]
       }
     }
   },

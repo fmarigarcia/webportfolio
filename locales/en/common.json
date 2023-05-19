@@ -1,3 +1,10 @@
 {
-  "colorModeChanger": { "claro": "light", "oscuro": "dark" }
+  "colorModeChanger": { "claro": "light", "oscuro": "dark" },
+  "jobTitle": "Full Stack Developer",
+  "nav": {
+    "contact": "contact",
+    "skills": "skills",
+    "about": "about",
+    "jobs": "experience"
+  }
 }

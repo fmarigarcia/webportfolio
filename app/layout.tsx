@@ -2,7 +2,7 @@ import React from 'react';
 import { ServerThemeProvider } from 'next-themes';
 import './styles/globals.css';
 import ClientThemeProvider from './providers/ClientThemeProvider';
-import { Montserrat } from 'next/font/google';
+import { Quicksand } from 'next/font/google';
 import clsx from 'clsx';
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Francisco Marí García web portfolio'
 };
 
-const montserrat = Montserrat({ subsets: ['latin-ext'] });
+const quicksand = Quicksand({ subsets: ['latin-ext'] });
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -18,8 +18,8 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <html>
         <body
           className={clsx(
-            montserrat.className,
-            'h-screen bg-background-light dark:bg-background-dark'
+            quicksand.className,
+            'h-screen bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark'
           )}
         >
           <ClientThemeProvider>{children}</ClientThemeProvider>

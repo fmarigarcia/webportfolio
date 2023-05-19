@@ -1,13 +1,12 @@
 import React from 'react';
 import ConfigBar from './components/ConfigBar';
+import Content from './components/Content';
 
 const Home: React.FC = () => {
   return (
     <main>
       <ConfigBar />
-      <div className="fixed left-0 top-0 h-full w-full  px-8 py-8">
-        <div className="border-slate-500 h-full border">a</div>
-      </div>
+      <Content />
     </main>
   );
 };
