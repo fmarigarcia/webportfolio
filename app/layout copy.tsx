@@ -1,7 +1,7 @@
 import React from 'react';
 import { Quicksand } from 'next/font/google';
 import clsx from 'clsx';
-import ClientThemeProvider from './providers/ClientThemeProvider';
+import ClientThemeProvider from '@providers/ClientThemeProvider';
 import './styles/globals.css';
 
 export const metadata = {
