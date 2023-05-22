@@ -1,16 +1,22 @@
 'use client';
-import React from 'react';
-import Link from 'next/link.js';
+import React, { useContext } from 'react';
+import { LocaleContext } from '@providers/LocaleProvider';
+import { locales } from '@mytypes/navigation';
 
 const LocaleChanger: React.FC = () => {
+  const { setLocale } = useContext(LocaleContext);
   return (
     <div className="flex gap-2">
-      <Link href="/?lang=es" locale="es">
-        es
-      </Link>
-      <Link href="/?lang=en" locale="en">
-        en
-      </Link>
+      {locales.map((locale) => (
+        <button
+          onClick={() => {
+            setLocale(locale);
+          }}
+          key={locale}
+        >
+          {locale}
+        </button>
+      ))}
     </div>
   );
 };

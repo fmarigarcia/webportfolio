@@ -3,12 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "standard-with-typescript",
-    "next/core-web-vitals",
-    "prettier"
-  ],
+  "extends": ["plugin:react/recommended", "standard-with-typescript", "next/core-web-vitals", "prettier"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -17,8 +12,11 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "prettier/prettier": ["error", { "endOfLine": "auto", "printWidth": 120 }],
     "@typescript-eslint/no-floating-promises": 0,
-    "@typescript-eslint/consistent-type-imports": 0
+    "@typescript-eslint/consistent-type-imports": 0,
+    "@typescript-eslint/consistent-type-definitions": 0,
+    "@typescript-eslint/array-type": 0,
+    "max-len": ["error", { "code": 120, "ignoreUrls": true }]
   }
 }

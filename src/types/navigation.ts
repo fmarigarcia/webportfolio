@@ -15,3 +15,7 @@ export const navTabs: Record<NavTabT, NavTabDataT> = {
   skills: { name: 'skills', component: Skills },
   contact: { name: 'contact', component: Contact }
 };
+
+export type LocaleT = 'es' | 'en';
+export const locales: LocaleT[] = ['es', 'en'];
+export const defaultLocale: LocaleT = 'es';

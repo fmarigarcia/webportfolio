@@ -22,7 +22,8 @@
     "paths": {
       "@styles/*": ["./src/styles/*"],
       "@components/*": ["./src/components/*"],
-      "@providers/*": ["./src/providers/*"]
+      "@providers/*": ["./src/providers/*"],
+      "@mytypes/*": ["./src/types/*"]
     }
   },
   "include": [

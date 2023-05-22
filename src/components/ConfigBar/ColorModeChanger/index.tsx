@@ -1,12 +1,28 @@
 'use client';
-import React from 'react';
-import useTranslation from 'next-translate/useTranslation';
+import React, { useContext } from 'react';
 import { useTheme } from 'next-themes';
+import { ColorModeChangerTransT } from '../../../types/translations';
+import useTranslations from '../../../hooks/useTranslations';
+import { LocaleContext } from '@providers/LocaleProvider';
+
+const query = `
+colorModeChanger(locale: $locale){
+  claro	
+  oscuro
+}
+`;
 
 const ColorModeChanger: React.FC = () => {
-  const { t } = useTranslation('common');
+  const { locale } = useContext(LocaleContext);
+  const translations = useTranslations<ColorModeChangerTransT>({
+    query,
+    locale
+  });
   const { setTheme } = useTheme();
-
+  if (translations === undefined) return <div />;
+  const {
+    colorModeChanger: { claro, oscuro }
+  } = translations;
   return (
     <div className="flex gap-2">
       <button
@@ -16,7 +32,7 @@ const ColorModeChanger: React.FC = () => {
           setTheme('light');
         }}
       >
-        {t('colorModeChanger.claro')}
+        {claro}
       </button>
       <button
         type="button"
@@ -25,7 +41,7 @@ const ColorModeChanger: React.FC = () => {
           setTheme('dark');
         }}
       >
-        {t('colorModeChanger.oscuro')}
+        {oscuro}
       </button>
     </div>
   );
