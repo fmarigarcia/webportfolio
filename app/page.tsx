@@ -1,13 +1,19 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import ConfigBar from '@components/ConfigBar';
 import Content from '@components/Content';
+import LocaleProvider from '@providers/LocaleProvider';
+import { LocaleT, defaultLocale } from '@mytypes/navigation';
 
 const Home: React.FC = () => {
+  const [locale, setLocale] = useState<LocaleT>(defaultLocale);
   return (
-    <main>
-      <ConfigBar />
-      <Content />
-    </main>
+    <LocaleProvider contextProps={{ locale, setLocale }}>
+      <main>
+        <ConfigBar />
+        <Content />
+      </main>
+    </LocaleProvider>
   );
 };
 

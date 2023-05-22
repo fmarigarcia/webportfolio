@@ -1,10 +1,7 @@
-'use client';
-import React, { PropsWithChildren, useState } from 'react';
+import React, { PropsWithChildren } from 'react';
 import { Quicksand } from 'next/font/google';
 import clsx from 'clsx';
 import ClientThemeProvider from '@providers/ClientThemeProvider';
-import LocaleProvider from '@providers/LocaleProvider';
-import { LocaleT, defaultLocale } from '@mytypes/navigation';
 import './globals.css';
 
 export const metadata = {
@@ -15,7 +12,6 @@ export const metadata = {
 const quicksand = Quicksand({ subsets: ['latin-ext'] });
 
 const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
-  const [locale, setLocale] = useState<LocaleT>(defaultLocale);
   return (
     <html>
       <body
@@ -24,9 +20,7 @@ const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
           'h-screen bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark'
         )}
       >
-        <LocaleProvider contextProps={{ locale, setLocale }}>
-          <ClientThemeProvider>{children}</ClientThemeProvider>
-        </LocaleProvider>
+        <ClientThemeProvider>{children}</ClientThemeProvider>
       </body>
     </html>
   );
