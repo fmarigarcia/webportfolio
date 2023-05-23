@@ -20,4 +20,20 @@ export type NavTransT = {
   };
 };
 
-export type TranslationsReturnT = ColorModeChangerTransT | HeaderTransT | NavTransT;
+export type AboutTransT = {
+  about: {
+    parrafo: string;
+  };
+};
+
+export type JobObjectT = {
+  empresa: string;
+  responsabilidades: string;
+  fechaFin: string;
+};
+
+export type AllJobsTransT = {
+  allJobs: JobObjectT[];
+};
+
+export type TranslationsReturnT = ColorModeChangerTransT | HeaderTransT | NavTransT | AboutTransT | AllJobsTransT;

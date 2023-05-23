@@ -3,10 +3,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   darkMode: 'class',
-  content: [
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}'
-  ],
+  content: ['./src/components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     colors: {
       primary: {
@@ -29,6 +26,9 @@ module.exports = {
         light: colors.zinc[800],
         dark: colors.zinc[200]
       }
+    },
+    minWidth: {
+      96: '24rem'
     }
   },
   plugins: []

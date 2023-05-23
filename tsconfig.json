@@ -23,7 +23,8 @@
       "@styles/*": ["./src/styles/*"],
       "@components/*": ["./src/components/*"],
       "@providers/*": ["./src/providers/*"],
-      "@mytypes/*": ["./src/types/*"]
+      "@mytypes/*": ["./src/types/*"],
+      "@hooks/*": ["./src/hooks/*"]
     }
   },
   "include": [

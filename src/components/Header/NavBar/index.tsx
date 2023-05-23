@@ -3,7 +3,7 @@ import NavBarItem from './NavBarItem';
 import { NavTabT, navTabs } from '@mytypes/navigation';
 import { LocaleContext } from '@providers/LocaleProvider';
 import { NavTransT } from '@mytypes/translations';
-import useTranslations from '../../../hooks/useTranslations';
+import useTranslations from '@hooks/useTranslations';
 
 interface INavBarProps {
   activeTab: NavTabT;

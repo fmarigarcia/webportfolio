@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import NavBar from './NavBar';
 import { NavTabT } from '@mytypes/navigation';
-import useTranslations from '../../hooks/useTranslations';
+import useTranslations from '@hooks/useTranslations';
 import { HeaderTransT } from '@mytypes/translations';
 import { LocaleContext } from '@providers/LocaleProvider';
 

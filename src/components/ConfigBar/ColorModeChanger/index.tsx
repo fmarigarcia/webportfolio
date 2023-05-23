@@ -2,7 +2,7 @@
 import React, { useContext } from 'react';
 import { useTheme } from 'next-themes';
 import { ColorModeChangerTransT } from '../../../types/translations';
-import useTranslations from '../../../hooks/useTranslations';
+import useTranslations from '@hooks/useTranslations';
 import { LocaleContext } from '@providers/LocaleProvider';
 
 const query = `

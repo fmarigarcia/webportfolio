@@ -5,7 +5,7 @@ import ClientThemeProvider from '@providers/ClientThemeProvider';
 import './globals.css';
 
 export const metadata = {
-  title: 'WebPortfolio',
+  title: 'Fran Marí | Home',
   description: 'Francisco Marí García web portfolio'
 };
 
