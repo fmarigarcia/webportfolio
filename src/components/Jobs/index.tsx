@@ -21,7 +21,7 @@ const Jobs: React.FC = () => {
   });
   const [activeIndex, setActiveIndex] = useState(0);
   if (translations === undefined) return <div />;
-  const allJobs = orderBy('fechaFin', ['desc'], translations.allJobs) as JobObjectT[];
+  const allJobs = orderBy('fechaFin', ['desc'], translations.allJobs);
   return (
     <div className="md:absolute md:bottom-0 md:right-0">
       <Menu currentIndex={activeIndex} setCurrentIndex={setActiveIndex} entries={allJobs.map((job) => job.empresa)} />
