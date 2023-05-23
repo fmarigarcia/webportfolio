@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { orderBy } from 'lodash/fp';
 import { LocaleContext } from '@providers/LocaleProvider';
 import useTranslations from '@hooks/useTranslations';
-import { AllJobsTransT, JobObjectT } from '@mytypes/translations';
+import { AllJobsTransT } from '@mytypes/translations';
 import Menu from './Menu';
 
 const query = `
