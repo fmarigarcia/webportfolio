@@ -8,7 +8,7 @@ const Content: React.FC = () => {
   const activeTab = navTabs[activeTabKey];
   return (
     <div className="fixed left-0 top-0 h-full w-full px-8 py-8">
-      <div className="relative h-full border border-text-light dark:border-text-dark">
+      <div className={`relative flex h-full flex-col gap-2 border border-text-light dark:border-text-dark md:block`}>
         <Header setActiveTab={setActiveTabKey} activeTab={activeTabKey} />
         <activeTab.component />
       </div>

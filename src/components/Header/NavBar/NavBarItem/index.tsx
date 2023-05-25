@@ -13,11 +13,10 @@ const NavBarItem: React.FC<INavBarItemProps> = ({ text, onClick, selected }) => 
     <button
       onClick={onClick}
       className={clsx(
-        selected && 'mb-0 bg-text-dark pt-3 text-text-light',
-        !selected && 'mb-2 bg-text-light text-text-dark',
-        `flex w-8 flex-col justify-start rounded-b-lg p-1 pb-2  
-        transition-all hover:mb-0 hover:bg-text-dark hover:pt-3 hover:text-text-light dark:bg-text-dark
-        dark:text-text-light hover:dark:bg-text-light hover:dark:text-text-dark`
+        selected && 'mb-0 bg-text-dark pt-3 text-text-light dark:bg-text-light dark:text-text-dark',
+        !selected && 'mb-2 bg-text-light text-text-dark dark:bg-text-dark dark:text-text-light',
+        `flex w-8 flex-col justify-start rounded-b-lg p-1 pb-2 transition-all hover:mb-0
+         hover:bg-text-dark hover:pt-3 hover:text-text-light hover:dark:bg-text-light hover:dark:text-text-dark`
       )}
     >
       <span className="uppercase" style={{ writingMode: 'vertical-lr' }}>

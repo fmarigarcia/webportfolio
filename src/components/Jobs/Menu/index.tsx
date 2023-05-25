@@ -9,7 +9,7 @@ interface IMenuProps {
 
 const Menu: React.FC<IMenuProps> = ({ currentIndex, setCurrentIndex, entries }) => {
   return (
-    <div className="flex flex-col items-end">
+    <div className="flex flex-wrap justify-center gap-1 md:flex-col md:items-end">
       {entries.map((entry, i) => (
         <MenuEntry
           text={entry}

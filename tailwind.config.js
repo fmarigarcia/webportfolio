@@ -29,6 +29,13 @@ module.exports = {
     },
     minWidth: {
       96: '24rem'
+    },
+    maxWidth: {
+      700: '700px'
+    },
+    textDecorationColor: {
+      transparent: 'transparent',
+      inherit: 'inherit'
     }
   },
   plugins: []

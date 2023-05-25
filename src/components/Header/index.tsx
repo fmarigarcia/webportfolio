@@ -28,7 +28,7 @@ const Header: React.FC<IHeaderProps> = ({ activeTab, setActiveTab }) => {
     miscelaneo: { jobTitle }
   } = translations;
   return (
-    <div className="relative left-0 top-0 w-full md:absolute md:w-auto">
+    <div className="left-0 top-0 w-full md:absolute md:w-auto">
       <div className="mb-4 w-fit ps-8 pt-8">
         <h1 className="text-2xl md:text-6xl md:font-light">Francisco Marí García</h1>
         <h3 className="mt-2 text-end text-sm md:text-xl md:font-light">{jobTitle}</h3>
