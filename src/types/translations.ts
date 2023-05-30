@@ -36,4 +36,14 @@ export type AllJobsTransT = {
   allJobs: JobObjectT[];
 };
 
-export type TranslationsReturnT = ColorModeChangerTransT | HeaderTransT | NavTransT | AboutTransT | AllJobsTransT;
+export type SkillAreaT = {
+  skillArea: Record<string, string>;
+};
+
+export type TranslationsReturnT =
+  | ColorModeChangerTransT
+  | HeaderTransT
+  | NavTransT
+  | AboutTransT
+  | AllJobsTransT
+  | SkillAreaT;

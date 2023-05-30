@@ -24,10 +24,10 @@ const ColorModeChanger: React.FC = () => {
     colorModeChanger: { claro, oscuro }
   } = translations;
   return (
-    <div className="flex gap-2">
+    <div className="flex items-end gap-2">
       <button
         type="button"
-        className=""
+        className="md:pb-0 md:transition-all md:hover:pb-1 md:hover:text-accent-dark md:hover:dark:text-accent-light"
         onClick={() => {
           setTheme('light');
         }}
@@ -36,7 +36,7 @@ const ColorModeChanger: React.FC = () => {
       </button>
       <button
         type="button"
-        className=""
+        className="md:pb-0 md:transition-all md:hover:pb-1 md:hover:text-accent-dark md:hover:dark:text-accent-light"
         onClick={() => {
           setTheme('dark');
         }}

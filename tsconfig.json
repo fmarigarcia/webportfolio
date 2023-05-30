@@ -24,7 +24,9 @@
       "@components/*": ["./src/components/*"],
       "@providers/*": ["./src/providers/*"],
       "@mytypes/*": ["./src/types/*"],
-      "@hooks/*": ["./src/hooks/*"]
+      "@hooks/*": ["./src/hooks/*"],
+      "@icons/*": ["./src/icons/*"],
+      "@home/*": ["./*"]
     }
   },
   "include": [

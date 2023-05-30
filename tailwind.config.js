@@ -31,7 +31,8 @@ module.exports = {
       96: '24rem'
     },
     maxWidth: {
-      700: '700px'
+      700: '700px',
+      125: '125px'
     },
     textDecorationColor: {
       transparent: 'transparent',
