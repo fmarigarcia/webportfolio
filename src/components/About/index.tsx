@@ -22,8 +22,17 @@ const About: React.FC = () => {
     about: { parrafo }
   } = translations;
   return (
-    <div className="p-4 text-lg md:absolute md:bottom-0 md:right-0 md:w-1/3 md:min-w-96 md:text-xl [&>*]:mb-2">
-      <ReactMarkdown>{parrafo}</ReactMarkdown>
+    <div className="p-4 text-lg md:absolute md:bottom-0 md:right-0 md:w-1/3 md:min-w-96 md:text-xl">
+      <ReactMarkdown
+        components={{
+          a: ({ node, ...props }) => (
+            <a className="transition-all hover:text-accent-dark hover:dark:text-accent-light" {...props}></a>
+          ),
+          p: ({ node, ...props }) => <p className="mb-2" {...props}></p>
+        }}
+      >
+        {parrafo}
+      </ReactMarkdown>
     </div>
   );
 };

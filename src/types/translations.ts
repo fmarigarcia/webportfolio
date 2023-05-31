@@ -40,10 +40,15 @@ export type SkillAreaT = {
   skillArea: Record<string, string>;
 };
 
+export type ContactoTransT = {
+  contacto: { titulo: string; cuerpo: string; descargarCv: string; escribeme: string; cv: { url: string } };
+};
+
 export type TranslationsReturnT =
   | ColorModeChangerTransT
   | HeaderTransT
   | NavTransT
   | AboutTransT
   | AllJobsTransT
-  | SkillAreaT;
+  | SkillAreaT
+  | ContactoTransT;

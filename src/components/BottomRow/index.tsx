@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import GitHub from '@icons/GitHub';
 import LinkedIn from '@icons/LinkedIn';
@@ -19,12 +20,14 @@ const BottomRow: React.FC = () => {
           />
         </a>
       </div>
-      <a
-        href="mailto:fran.mari.94@gmail.com"
-        className="md:pt-0 md:transition-all md:hover:pt-1 md:hover:text-accent-dark md:hover:dark:text-accent-light"
-      >
-        fran.mari.94@gmail.com
-      </a>
+      <div>
+        <a
+          href="mailto:fran.mari.94@gmail.com"
+          className="md:pt-0 md:transition-all md:hover:pt-1 md:hover:text-accent-dark md:hover:dark:text-accent-light"
+        >
+          fran.mari.94@gmail.com
+        </a>
+      </div>
     </div>
   );
 };
