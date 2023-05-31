@@ -25,7 +25,10 @@ const Skills: React.FC = () => {
   if (translations === undefined) return <div />;
   const { skillArea } = translations;
   return (
-    <div className="absolute bottom-0 flex gap-8 p-8">
+    <div
+      className={`flex flex-col items-center gap-8 overflow-scroll pb-8 md:absolute 
+    md:bottom-0 md:flex-row md:items-stretch md:overflow-auto md:p-8`}
+    >
       {skillTree.map((area) => (
         <div className="flex max-w-125 flex-col gap-2" key={area.titleKey}>
           <h3

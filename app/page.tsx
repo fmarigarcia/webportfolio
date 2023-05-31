@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ConfigBar from '@components/ConfigBar';
 import Content from '@components/Content';
 import LocaleProvider from '@providers/LocaleProvider';
+import BottomRow from '@components/BottomRow';
 import { LocaleT, defaultLocale } from '@mytypes/navigation';
 
 const Home: React.FC = () => {
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <main>
         <ConfigBar />
         <Content />
+        <BottomRow />
       </main>
     </LocaleProvider>
   );

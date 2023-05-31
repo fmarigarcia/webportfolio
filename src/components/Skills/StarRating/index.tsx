@@ -10,7 +10,7 @@ interface IStarRatingProps {
 const StarRating: React.FC<IStarRatingProps> = ({ value, size, starNumber = 5 }) => {
   const [actualValue, setActualValue] = useState(0);
   const starIncrement = 1 / 20;
-  const starColors = ['#ff0000', '#ff8000', '#ffff00', '#80ff00', '#00ff00'];
+  const starColors = ['#a50104', '#d15e04', '#fcba04', '#b2ae2a', '#6da34d'];
   useEffect(() => {
     const interval = setInterval(() => {
       if (actualValue < value)
