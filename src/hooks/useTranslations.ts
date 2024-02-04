@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import request from '../lib/datocms';
+import { request } from '../lib/datocms';
 import { TranslationsReturnT } from '../types/translations';
 
 const useTranslations = <T extends TranslationsReturnT>({
