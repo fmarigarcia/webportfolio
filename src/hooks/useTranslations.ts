@@ -19,10 +19,11 @@ const useTranslations = <T extends TranslationsReturnT>({
   );
 
   useEffect(() => {
+    if (!request) return;
     request({ query: fullQuery, variables: { locale } }).then((res: T) => {
       setData(res);
     });
-  }, [fullQuery, locale]);
+  }, [fullQuery, locale, request]);
 
   return data;
 };

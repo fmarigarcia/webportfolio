@@ -1,7 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { Quicksand } from 'next/font/google';
 import clsx from 'clsx';
-import ClientThemeProvider from '@providers/ClientThemeProvider';
 import './globals.css';
 
 export const metadata = {
@@ -20,7 +19,7 @@ const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
           'h-screen bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark'
         )}
       >
-        <ClientThemeProvider>{children}</ClientThemeProvider>
+        {children}
       </body>
     </html>
   );
