@@ -8,7 +8,6 @@ interface IRequestProps {
 }
 const request = ({ query, variables, includeDrafts = false, excludeInvalid = false }: IRequestProps): any => {
   const token = process.env.NEXT_PUBLIC_NEXT_DATOCMS_API_TOKEN;
-  console.log('t:', token);
   if (token === undefined) return;
   const headers: Record<string, string> = {
     authorization: `Bearer ${token}`
