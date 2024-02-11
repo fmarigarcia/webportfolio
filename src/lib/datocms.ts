@@ -1,5 +1,4 @@
 import { GraphQLClient } from 'graphql-request';
-import { GraphQLClientRequestHeaders } from 'graphql-request/build/esm/types';
 
 interface IRequestProps {
   query: string;
@@ -10,7 +9,7 @@ interface IRequestProps {
 const request = ({ query, variables, includeDrafts = false, excludeInvalid = false }: IRequestProps): any => {
   const token = process.env.NEXT_PUBLIC_NEXT_DATOCMS_API_TOKEN;
   if (token === undefined) return;
-  const headers: GraphQLClientRequestHeaders = {
+  const headers: Record<string, string> = {
     authorization: `Bearer ${token}`
   };
   if (includeDrafts) {
