@@ -18,4 +18,4 @@ export const navTabs: Record<NavTabT, NavTabDataT> = {
 
 export type LocaleT = 'es' | 'en';
 export const locales: LocaleT[] = ['es', 'en'];
-export const defaultLocale: LocaleT = 'es';
+export const defaultLocale: LocaleT = 'en';
